@@ -4,6 +4,7 @@ module.exports = {
   siteMetadata: {
     title: config.siteTitle,
     description: config.siteDescription,
+    siteUrl: config.siteUrl,
   },
   plugins: [
     'gatsby-plugin-catch-links',
