@@ -1,14 +1,13 @@
 const config = {
-  siteTitle: 'CodeStack Brasil',
-  siteDescription:
-    'O melhor blog de programação do Brasil tem nome, é CodeStack.',
-  siteTitleShort: 'CodeStack BR',
+  siteTitle: 'Vinicius Vicentini',
+  siteDescription: 'Front-end developer',
+  siteTitleShort: 'Vicentini',
   siteRss: '/rss.xml',
   siteImage: 'https://codestackbrasil.netlify.com/banner-do-site.png',
   googleAnalyticsID: '**-********-*',
-  themeColor: '#000000',
-  backgroundColor: '#F2F3F4',
-  siteUrl: 'https://codestackbrasil.netlify.com',
+  themeColor: '#fff',
+  backgroundColor: '#2a313b',
+  siteUrl: 'https://viniciusvicentini.netlify.com',
 }
 
 module.exports = config

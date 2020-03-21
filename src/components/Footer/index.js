@@ -1,10 +1,13 @@
 import React from 'react'
 
-export default function Footer() {
+import * as S from './styled'
+
+import { Container } from '../'
+
+export default () => {
   return (
-    <footer>
-      © {new Date().getFullYear()}, Built with
-      <a href="https://www.gatsbyjs.org">Gatsby</a>
-    </footer>
+    <S.FooterWrapper>
+      <Container>© {new Date().getFullYear()} - Vinicius Vicentini</Container>
+    </S.FooterWrapper>
   )
 }

@@ -23,7 +23,6 @@ export default class Post extends Component {
       <Layout>
         <div
           style={{
-            backgroundColor: '#FFF',
             width: '100%',
             padding: '1.5rem',
             borderRadius: '0.50rem',
@@ -35,9 +34,10 @@ export default class Post extends Component {
           <p>
             {tags.map(tag => (
               <Link
-                style={{ color: '#000', marginRight: '10px' }}
+                style={{ marginRight: '10px' }}
                 key={tag}
                 to={`/tag/${kebabCase(tag)}`}
+                className="dash"
               >
                 {tag}
               </Link>

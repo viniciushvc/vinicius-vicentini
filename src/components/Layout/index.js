@@ -1,15 +1,16 @@
 import React from 'react'
-import { useStaticQuery, graphql } from 'gatsby'
 import Helmet from 'react-helmet'
 
-import Header from '../Header'
-import Footer from '../Footer'
-import 'minireset.css'
+import { useStaticQuery, graphql } from 'gatsby'
+
+import { Header, Container, Footer } from '../'
+
+import GlobalStyles from '../../styles/global'
 
 import favicon from '../../../static/favicon.png'
 import config from '../../../data/config'
 
-export default function Layout({ children }) {
+export default ({ children }) => {
   const data = useStaticQuery(graphql`
     {
       site {
@@ -27,9 +28,11 @@ export default function Layout({ children }) {
         <link rel="icon" href={favicon} />
       </Helmet>
 
+      <GlobalStyles />
+
       <Header siteTitle={data.site.siteMetadata.title} />
 
-      <main>{children}</main>
+      <Container>{children}</Container>
 
       <Footer />
     </>

@@ -1,23 +1,23 @@
-import { Link } from 'gatsby'
-import PropTypes from 'prop-types'
 import React from 'react'
 
-const Header = ({ siteTitle }) => (
-  <header>
-    <div>
-      <h1>
-        <Link to="/">{siteTitle}</Link>
-      </h1>
-    </div>
-  </header>
-)
+import * as S from './styled'
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
+export default () => {
+  return (
+    <S.HeaderWrapper>
+      <div className="main">
+        <S.HeaderLink to="/">Vicentini Vicentini</S.HeaderLink>
+
+        <div className="links">
+          <ul>
+            <li></li>
+
+            <li>
+              <S.HeaderLink to="/about">Sobre</S.HeaderLink>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </S.HeaderWrapper>
+  )
 }
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
-
-export default Header

@@ -1,20 +1,21 @@
 import React from 'react'
-import { Link } from 'gatsby'
 
-import './Posts.css'
+import * as S from './styled'
 
-export default function Posts({ data }) {
+export default ({ data }) => {
   const { edges } = data
 
-  const posts = edges.map(({ node }) => (
-    <div key={node.fields.slug} className="post">
-      <Link to={node.fields.slug} className="post-title">
-        <h2>{node.frontmatter.title}</h2>
-      </Link>
-      <p className="post-date">{node.frontmatter.date}</p>
-      <p>{node.frontmatter.description}</p>
-    </div>
-  ))
+  return (
+    <S.PostsWrapper>
+      {edges.map(({ node }) => (
+        <S.Post key={node.fields.slug}>
+          <S.PostLink to={node.fields.slug}>
+            <S.PostTitle>{node.frontmatter.title}</S.PostTitle>
 
-  return <div className="posts">{posts}</div>
+            <S.PostDate>{node.frontmatter.date}</S.PostDate>
+          </S.PostLink>
+        </S.Post>
+      ))}
+    </S.PostsWrapper>
+  )
 }
