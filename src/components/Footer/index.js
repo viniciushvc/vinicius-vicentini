@@ -7,7 +7,9 @@ import { Container } from '../'
 export default () => {
   return (
     <S.FooterWrapper>
-      <Container>© {new Date().getFullYear()} - Vinicius Vicentini</Container>
+      <Container>
+        <S.Footer>© {new Date().getFullYear()} Vinicius Vicentini</S.Footer>
+      </Container>
     </S.FooterWrapper>
   )
 }

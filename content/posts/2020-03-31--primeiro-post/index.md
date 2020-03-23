@@ -1,5 +1,5 @@
 ---
-title: 'Primeiro post'
+title: 'Meu primeiro post'
 date: '2020-03-21'
 description: 'Estou criando este site/blog para me incentivar a escrever e também para divulgar meu projetos'
 draft: false

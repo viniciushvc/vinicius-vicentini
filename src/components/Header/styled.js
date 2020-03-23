@@ -2,40 +2,44 @@ import styled from 'styled-components'
 
 import { Link } from 'gatsby'
 
-export const HeaderWrapper = styled.header`
-  background-color: #000;
-  padding: 20px 1.3rem;
-  position: sticky;
-  top: 0;
-  z-index: 1;
+import { css } from 'styled-components'
 
-  .main {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .name {
-    font-weight: 700;
-    font-size: 25px;
-  }
-
-  .links {
-    ul {
-      li {
-        display: inline-block;
-
-        &:not(:last-child) {
-          padding-right: 20px;
-        }
-      }
-    }
-  }
-`
-
-export const HeaderLink = styled(Link)`
+const link = css`
   color: #fff;
 
   &:hover {
     color: $primary;
   }
+`
+
+export const HeaderWrapper = styled.header`
+  padding: 40px 0;
+  z-index: 1;
+`
+
+export const HeaderContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+`
+
+export const HeaderBrand = styled(Link)`
+  ${link}
+  font-size: 25px;
+  font-weight: 700;
+`
+
+export const HeaderLinks = styled.div``
+
+export const HeaderList = styled.ul``
+
+export const HeaderItem = styled.li`
+  display: inline-block;
+
+  &:not(:last-child) {
+    padding-right: 20px;
+  }
+`
+
+export const HeaderLink = styled(Link)`
+  ${link}
 `

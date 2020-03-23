@@ -8,13 +8,11 @@ export default ({ data }) => {
   return (
     <S.PostsWrapper>
       {edges.map(({ node }) => (
-        <S.Post key={node.fields.slug}>
-          <S.PostLink to={node.fields.slug}>
+        <S.PostLink to={node.fields.slug} key={node.fields.slug}>
+          <S.Post>
             <S.PostTitle>{node.frontmatter.title}</S.PostTitle>
-
-            <S.PostDate>{node.frontmatter.date}</S.PostDate>
-          </S.PostLink>
-        </S.Post>
+          </S.Post>
+        </S.PostLink>
       ))}
     </S.PostsWrapper>
   )

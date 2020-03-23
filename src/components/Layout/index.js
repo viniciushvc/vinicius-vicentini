@@ -3,9 +3,11 @@ import Helmet from 'react-helmet'
 
 import { useStaticQuery, graphql } from 'gatsby'
 
-import { Header, Container, Footer } from '../'
+import { Header, Footer } from '../'
 
 import GlobalStyles from '../../styles/global'
+
+import * as S from './styled'
 
 import favicon from '../../../static/favicon.png'
 import config from '../../../data/config'
@@ -32,7 +34,7 @@ export default ({ children }) => {
 
       <Header siteTitle={data.site.siteMetadata.title} />
 
-      <Container>{children}</Container>
+      <S.Main>{children}</S.Main>
 
       <Footer />
     </>

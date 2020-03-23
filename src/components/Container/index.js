@@ -2,6 +2,6 @@ import React from 'react'
 
 import * as S from './styled'
 
-export default ({ children }) => {
-  return <S.ContainerWrapper>{children}</S.ContainerWrapper>
+export default ({ maxWidth, children }) => {
+  return <S.ContainerWrapper maxWidth={maxWidth}>{children}</S.ContainerWrapper>
 }

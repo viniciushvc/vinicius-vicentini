@@ -1,23 +1,25 @@
 import React from 'react'
 
+import { Container } from '../'
+
 import * as S from './styled'
 
 export default () => {
   return (
     <S.HeaderWrapper>
-      <div className="main">
-        <S.HeaderLink to="/">Vicentini Vicentini</S.HeaderLink>
+      <Container>
+        <S.HeaderContainer>
+          <S.HeaderBrand to="/">Vicentini Vicentini</S.HeaderBrand>
 
-        <div className="links">
-          <ul>
-            <li></li>
-
-            <li>
-              <S.HeaderLink to="/about">Sobre</S.HeaderLink>
-            </li>
-          </ul>
-        </div>
-      </div>
+          <S.HeaderLinks>
+            <S.HeaderList>
+              <S.HeaderItem>
+                <S.HeaderLink to="/about">Sobre</S.HeaderLink>
+              </S.HeaderItem>
+            </S.HeaderList>
+          </S.HeaderLinks>
+        </S.HeaderContainer>
+      </Container>
     </S.HeaderWrapper>
   )
 }

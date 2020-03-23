@@ -4,7 +4,7 @@ const { createFilePath } = require('gatsby-source-filesystem')
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions
-  if (node.internal.type === `MarkdownRemark`) {
+  if (node.internal.type === 'MarkdownRemark') {
     const slug = createFilePath({
       node,
       getNode,
@@ -17,18 +17,18 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     if (source !== 'parts') {
       createNodeField({
         node,
-        name: `slug`,
+        name: 'slug',
         value: `${separtorIndex ? '/' : ''}${slug.substring(shortSlugStart)}`,
       })
     }
     createNodeField({
       node,
-      name: `prefix`,
+      name: 'prefix',
       value: separtorIndex ? slug.substring(1, separtorIndex) : '',
     })
     createNodeField({
       node,
-      name: `source`,
+      name: 'source',
       value: source,
     })
   }
@@ -38,8 +38,8 @@ exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
 
   return new Promise((resolve, reject) => {
-    const postTemplate = path.resolve('src/templates/post.js')
-    const tagTemplate = path.resolve('src/templates/tag.js')
+    const postTemplate = path.resolve('src/templates/Post/index.js')
+    const tagTemplate = path.resolve('src/templates/Tag/index.js')
     resolve(
       graphql(
         `
@@ -110,7 +110,7 @@ exports.createPages = ({ graphql, actions }) => {
 
         /* Cria a página de posts */
         const posts = items.filter(item => item.node.fields.source === 'posts')
-        posts.forEach(({ node }, index) => {
+        posts.forEach(({ node }) => {
           const { slug, source } = node.fields
           createPage({
             path: slug,
