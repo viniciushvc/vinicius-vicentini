@@ -62,7 +62,7 @@ a {
 }
 
 body {
-  background-color: #2a313b;
+  background-color: #0d2538;
 	color: #fff;
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }

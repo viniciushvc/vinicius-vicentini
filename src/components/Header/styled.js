@@ -13,7 +13,10 @@ const link = css`
 `
 
 export const HeaderWrapper = styled.header`
-  padding: 40px 0;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  padding: 20px 0;
   z-index: 1;
 `
 
@@ -24,8 +27,6 @@ export const HeaderContainer = styled.div`
 
 export const HeaderBrand = styled(Link)`
   ${link}
-  font-size: 25px;
-  font-weight: 700;
 `
 
 export const HeaderLinks = styled.div``
