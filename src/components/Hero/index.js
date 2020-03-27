@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Container } from '../'
+import { Container, Fab } from '../'
 
 import * as S from './styled'
 
@@ -17,44 +17,34 @@ export default () => {
 
           <S.SocialList>
             <S.SocialItem>
-              <S.SocialLink
+              <Fab
                 href="https://github.com/viniciushvc"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FiGithub size="25" color="#000" />
-              </S.SocialLink>
+                icon={FiGithub}
+                color="#000"
+              />
             </S.SocialItem>
 
             <S.SocialItem>
-              <S.SocialLink
-                href="https://github.com/viniciushvc"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FiLinkedin size="25" color="#000" />
-              </S.SocialLink>
+              <Fab
+                href="https://www.linkedin.com/in/viniciushvc/"
+                icon={FiLinkedin}
+                color="#000"
+              />
             </S.SocialItem>
 
             <S.SocialItem>
-              <S.SocialLink
+              <Fab
                 href="https://twitter.com/ViniciusHVC"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FiTwitter size="25" color="#000" />
-              </S.SocialLink>
+                icon={FiTwitter}
+                color="#000"
+              />
             </S.SocialItem>
 
-            <S.SocialItem>
-              <S.SocialLink
-                href="https://www.instagram.com/viniciusHVC"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FiInstagram size="25" color="#000" />
-              </S.SocialLink>
-            </S.SocialItem>
+            <Fab
+              href="https://www.instagram.com/viniciusHVC"
+              icon={FiInstagram}
+              color="#000"
+            />
           </S.SocialList>
         </S.HeroContainer>
       </Container>
