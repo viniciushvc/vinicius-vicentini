@@ -73,6 +73,7 @@ p {
   line-height: 1.7;
   letter-spacing: 1px;
 }
+
 `
 
 export default GlobalStyles

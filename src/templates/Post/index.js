@@ -15,12 +15,15 @@ export default class Post extends Component {
 
     return (
       <Layout>
-        <Container maxWidth="1000px">
+        <S.PostImage src="https://images.unsplash.com/photo-1500576992153-0271099def59?ixlib=rb-1.2.1&auto=format&fit=crop&w=1250&q=50"></S.PostImage>
+
+        <Container>
           <S.PostWrapper>
-            <SEO title={title} url={slug} description={description} article />
             <S.PostDate>{date}</S.PostDate>
 
             <S.PostTitle>{title}</S.PostTitle>
+
+            <SEO title={title} url={slug} description={description} article />
 
             <S.PostContent>
               <p dangerouslySetInnerHTML={{ __html: html }} />

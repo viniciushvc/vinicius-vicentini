@@ -1,7 +1,7 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 
-import { Layout, SEO, Posts, Container } from '../components'
+import { Layout, SEO, Posts, Container, Hero } from '../components'
 
 export default function Index() {
   const { allMarkdownRemark } = useStaticQuery(
@@ -33,6 +33,8 @@ export default function Index() {
 
   return (
     <Layout>
+      <Hero />
+
       <Container>
         <SEO pageTitle="Home" pageDescription="Home" />
         <Posts data={allMarkdownRemark} />

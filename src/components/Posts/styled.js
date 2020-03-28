@@ -7,7 +7,7 @@ export const PostsWrapper = styled.article`
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-auto-rows: auto;
   grid-gap: 1rem;
-  margin: 20px 0;
+  margin: 50px 0;
 `
 
 export const PostLink = styled(Link)`
@@ -17,7 +17,7 @@ export const PostLink = styled(Link)`
 
 export const Post = styled.div`
   border-radius: 5px;
-  background-color: #16202c;
+  background-color: #0f2d44;
   padding: 20px;
   color: #fff;
   height: 150px;

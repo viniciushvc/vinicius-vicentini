@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const HeroWrapper = styled.section`
   background-color: #0f2d44;
-  padding: 100px 0;
+  padding: 50px 0;
 `
 
 export const HeroContainer = styled.section`
@@ -14,18 +14,32 @@ export const HeroContainer = styled.section`
 export const ImageWrapper = styled.div`
   padding: 5px;
   border-radius: 100%;
-  border: 4px solid tomato;
-  width: 150px;
+  border: 3px solid tomato;
+  width: 100px;
 `
 
 export const Image = styled.img`
   border-radius: 100%;
   background-size: cover;
-  height: 150px;
+  height: 100px;
+`
+
+export const Title = styled.h1`
+  text-align: center;
+  margin-top: 30px;
+  font-size: 30px;
+  font-weight: 500;
+
+  small {
+    display: block;
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 5px;
+  }
 `
 
 export const SocialList = styled.ul`
-  margin-top: 20px;
+  margin-top: 30px;
 `
 
 export const SocialItem = styled.li`

@@ -2,16 +2,15 @@ import React from 'react'
 
 import * as S from './styled'
 
-export default ({ href, background, hover, color, icon: Icon }) => {
+export default ({ href, background, color, icon: Icon }) => {
   return (
     <S.Fab
       href={href}
       background={background}
-      hover={hover}
       target="_blank"
       rel="noopener noreferrer"
     >
-      <Icon size={25} color={color} />
+      <Icon size={20} color={color} />
     </S.Fab>
   )
 }

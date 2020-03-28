@@ -13,9 +13,6 @@ const link = css`
 `
 
 export const HeaderWrapper = styled.header`
-  width: 100%;
-  position: absolute;
-  top: 0;
   padding: 20px 0;
   z-index: 1;
 `
