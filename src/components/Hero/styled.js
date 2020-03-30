@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const HeroWrapper = styled.section`
-  background-color: #0f2d44;
+  background-color: var(--secondaryBackground);
   padding: 50px 0;
 `
 

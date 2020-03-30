@@ -50,7 +50,7 @@ a {
   padding-bottom: 2px;
   margin-bottom: 2px;
 	text-decoration: none;
-	color: #fff;
+	color: --var(secondaryColor);
 
 	&.dash {
 		border-bottom: 2px dashed currentColor;
@@ -62,9 +62,23 @@ a {
 }
 
 body {
-  background-color: #0d2538;
-	color: #fff;
+  background-color: var(--primaryBackground);
+	color: var(--primaryColor);
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+body.dark {
+  --primaryColor: #fff;
+  --secondaryColor: #03a9f4;
+  --primaryBackground: #0d2538;
+  --secondaryBackground: #0f2d44;
+}
+
+body.light {
+  --primaryColor: #222;
+  --secondaryColor: #03a9f4;
+  --primaryBackground: #fdfdfd;
+  --secondaryBackground: #eee;
 }
 
 p {

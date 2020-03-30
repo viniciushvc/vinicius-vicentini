@@ -17,9 +17,9 @@ export const PostLink = styled(Link)`
 
 export const Post = styled.div`
   border-radius: 5px;
-  background-color: #0f2d44;
+  background-color: var(--secondaryBackground);
   padding: 20px;
-  color: #fff;
+  color: var(--primaryColor);
   height: 150px;
 `
 

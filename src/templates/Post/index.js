@@ -3,7 +3,7 @@ import { graphql } from 'gatsby'
 
 import { Layout, SEO, Container } from '../../components'
 
-import * as S from './styled'
+import * as S from '../../styles/base'
 
 export default class Post extends Component {
   render() {

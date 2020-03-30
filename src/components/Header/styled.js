@@ -5,7 +5,7 @@ import { Link } from 'gatsby'
 import { css } from 'styled-components'
 
 const link = css`
-  color: #fff;
+  color: var(--primaryColor);
 
   &:hover {
     color: $primary;
