@@ -2,7 +2,9 @@ import styled from 'styled-components'
 
 import { Link } from 'gatsby'
 
-export const PostsWrapper = styled.article`
+export const PostsWrapper = styled.article``
+
+export const PostsList = styled.article`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-auto-rows: auto;

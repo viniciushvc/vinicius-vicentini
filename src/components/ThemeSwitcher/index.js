@@ -2,8 +2,6 @@ import React, { useState, useEffect } from 'react'
 
 import { FiSun, FiMoon } from 'react-icons/fi'
 
-import { Fab } from '../'
-
 import * as S from './styled'
 
 export default function() {
@@ -17,15 +15,15 @@ export default function() {
     window.__onThemeChange = () => setTheme(window.__theme)
   }, [])
 
+  function changeTheme() {
+    window.__setPreferredTheme(isDark ? 'light' : 'dark')
+  }
+
   return (
     <S.ThemeWrapper>
-      <Fab
-        icon={isDark ? FiSun : FiMoon}
-        color={isDark ? '#333' : '#fff'}
-        onClick={() => {
-          window.__setPreferredTheme(isDark ? 'light' : 'dark')
-        }}
-      />
+      <S.ThemeButton color={isDark ? '#fff' : '#333'} onClick={changeTheme}>
+        {isDark ? <FiSun /> : <FiMoon />}
+      </S.ThemeButton>
     </S.ThemeWrapper>
   )
 }

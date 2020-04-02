@@ -17,6 +17,13 @@ module.exports = {
         path: `${__dirname}/content/posts`,
       },
     },
+    {
+      resolve: 'gatsby-plugin-page-creator',
+      options: {
+        path: `${__dirname}/src/pages`,
+        ignore: ['**/styled.js'],
+      },
+    },
     'gatsby-plugin-offline',
     'gatsby-plugin-sitemap',
     {

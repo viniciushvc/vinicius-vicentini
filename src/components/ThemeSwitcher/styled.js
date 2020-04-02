@@ -1,7 +1,12 @@
 import styled from 'styled-components'
 
-export const ThemeWrapper = styled.div`
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
+export const ThemeWrapper = styled.div``
+
+export const ThemeButton = styled.button`
+  background-color: transparent;
+  border: none;
+  color: ${props => props.color};
+  font-size: 15px;
+  outline: 0;
+  cursor: pointer;
 `

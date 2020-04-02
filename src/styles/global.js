@@ -44,8 +44,23 @@ table {
 	border-spacing: 0;
 }
 
-
 a {
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.black {
+  font-weight: 900;
+}
+
+/* a {
   display: inline-block;
   padding-bottom: 2px;
   margin-bottom: 2px;
@@ -59,7 +74,7 @@ a {
       border-bottom: 2px solid;
     }
 	}
-}
+} */
 
 body {
   background-color: var(--primaryBackground);
@@ -70,24 +85,20 @@ body {
 body.dark {
   --primaryColor: #fff;
   --secondaryColor: #03a9f4;
+  --inverseColor: #222;
   --primaryBackground: #0d2538;
   --secondaryBackground: #0f2d44;
+  --inverseBackground: #fdfdfd;
 }
 
 body.light {
   --primaryColor: #222;
   --secondaryColor: #03a9f4;
+  --inverseColor: #fff;
+  --inverseBackground: #0d2538;
   --primaryBackground: #fdfdfd;
   --secondaryBackground: #eee;
 }
-
-p {
-  font-size: 1.25rem;
-  font-weight: 300;
-  line-height: 1.7;
-  letter-spacing: 1px;
-}
-
 `
 
 export default GlobalStyles

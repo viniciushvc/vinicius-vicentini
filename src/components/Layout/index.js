@@ -3,7 +3,7 @@ import Helmet from 'react-helmet'
 
 import { useStaticQuery, graphql } from 'gatsby'
 
-import { Header, Footer, ThemeSwitcher } from '../'
+import { Header, Footer } from '../'
 
 import GlobalStyles from '../../styles/global'
 
@@ -31,8 +31,6 @@ export default ({ children }) => {
       </Helmet>
 
       <GlobalStyles />
-
-      <ThemeSwitcher />
 
       <Header siteTitle={data.site.siteMetadata.title} />
 

@@ -24,6 +24,8 @@ export const HeaderContainer = styled.div`
 
 export const HeaderBrand = styled(Link)`
   ${link}
+
+  font-weight: 900;
 `
 
 export const HeaderLinks = styled.div``
@@ -40,4 +42,8 @@ export const HeaderItem = styled.li`
 
 export const HeaderLink = styled(Link)`
   ${link}
+
+  &.active {
+    text-shadow: 1px 0 0 currentColor;
+  }
 `

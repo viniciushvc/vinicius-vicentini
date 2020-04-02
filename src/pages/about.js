@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Layout, SEO, Container, Hero } from '../components'
+import { Layout, SEO, Container, Profile } from '../components'
 
 import * as S from '../styles/base'
 
@@ -9,51 +9,35 @@ export default function About() {
     <Layout>
       <SEO pageTitle="Sobre" pageDescription="Sobre" />
 
-      <Hero />
+      <Profile />
 
       <Container>
-        <h1>Sobre mim</h1>
+        <S.PostTitle>Sobre mim</S.PostTitle>
 
-        <h1>
-          Sou programador desde 2016, porém com foco em front-end ultimamente,
-          com foco em UI e desempenho. Atualmente trabalho na Dryve , empresa de
-          venda de véiculos semi novos com a missão de garantir a maior
-          segurança e facilitar o contato de compradores e vendedores. Formação
-          Cincia da computação Trabalhos anteriores Datamob informática
-        </h1>
+        <S.PostContent>
+          <p>
+            Sou de Brodowski, interior de São Paulo, proximo a Ribeirão Preto.
+            Comecei a trabalhar como programador em 2016 na empresa Datamob como
+            programador fullstack e foi onde fiquei até o meio de 2019.
+            Atualmente trabalho na Dryve como programador Front-End
+          </p>
 
-        <h1>
-          Eu amo trabalhar em equipe e sou bem comunicativo. No meu tempo livre,
-          gosto de ensinar meus amigos sobre alguma coisa que aprendi, acho que
-          por isso nasceu esse blog.
-        </h1>
+          <h2>Habilidades</h2>
 
-        <h2>Habilidades</h2>
-
-        <ul>
-          <li>HTML e Template Languages</li>
-          <li>Design Responsivo (Mobile First)</li>
-          <li>CSS (Stylus, Sass, Less, PostCSS)</li>
-          <li>Css Frameworks (Bootstrap, Foundation, Bulma)</li>
-          <li>Javascript (Design Patterns, Testes, ES6/7)</li>
-          <li>ReactJS / Redux / Flux</li>
-          <li>NodeJS</li>
-          <li>Automatizadores (Grunt, Gulp, Webpack, Parcel)</li>
-          <li>Git</li>
-          <li>Python</li>
-          <li>Ruby / Rails</li>
-          <li>MySQL - MongoDB</li>
-          <li>Scrum and Kanban</li>
-          <li>TDD e Continuous Integration</li>
-          <li>O que eu não sei, aprendo rápido =)</li>
-        </ul>
-
-        <h2>Contato</h2>
-
-        <h1>
-          Você pode entrar em contato comigo através de qualquer uma das minhas
-          redes sociais.
-        </h1>
+          <ul>
+            <li>HTML</li>
+            <li>CSS (Sass)</li>
+            <li>Javascript</li>
+            <li>Css Frameworks (Bootstrap, Materialize, Semantic UI)</li>
+            <li>ReactJS / Redux / Flux</li>
+            <li>Angular / RxJs</li>
+            <li>Vue / Vuex</li>
+            <li>NodeJS</li>
+            <li>Git</li>
+            <li>MySQL - Oracle</li>
+            <li>O que eu não sei, aprendo rápido =)</li>
+          </ul>
+        </S.PostContent>
       </Container>
     </Layout>
   )
