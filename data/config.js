@@ -1,5 +1,5 @@
 const config = {
-  siteTitle: 'Vinicius Vicentini',
+  siteTitle: 'Vicentini',
   siteDescription: 'Front-end developer',
   siteTitleShort: 'Vicentini',
   siteRss: '/rss.xml',

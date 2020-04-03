@@ -4,12 +4,12 @@ import { Button } from '../'
 
 import * as S from './styled'
 
-export default ({ data }) => {
+export default ({ home = false, data }) => {
   const { edges } = data
 
   return (
     <S.PostsWrapper>
-      <h2 className="black">Últimos posts</h2>
+      {home && <h2 className="black">Últimos posts</h2>}
 
       <S.PostsList>
         {edges.map(({ node }) => (
@@ -21,7 +21,7 @@ export default ({ data }) => {
         ))}
       </S.PostsList>
 
-      <Button to="/blog">Ver todos os posts</Button>
+      {home && <Button to="/blog">Veja mais</Button>}
     </S.PostsWrapper>
   )
 }

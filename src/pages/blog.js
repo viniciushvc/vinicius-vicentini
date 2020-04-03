@@ -1,15 +1,49 @@
 import React from 'react'
 
-import { Layout, SEO, Container, Hero } from '../components'
+import { useStaticQuery, graphql } from 'gatsby'
+
+import { Layout, SEO, Container, Hero, Posts } from '../components'
 
 export default function Index() {
+  const { allMarkdownRemark } = useStaticQuery(
+    graphql`
+      query {
+        allMarkdownRemark(
+          limit: 2000
+          sort: { fields: [fields___prefix], order: DESC }
+          filter: { frontmatter: { draft: { ne: true } } }
+        ) {
+          edges {
+            node {
+              fields {
+                slug
+              }
+              timeToRead
+              frontmatter {
+                title
+                tags
+                date(formatString: "DD/MM/YYYY")
+                description
+              }
+            }
+          }
+        }
+      }
+    `
+  )
+
   return (
     <Layout>
       <SEO pageTitle="Blog" pageDescription="Blog" />
 
-      <Hero color="#005cef" />
+      <Hero
+        title="Blog"
+        description="Um pouco do meu conhecimento, aqui eu escrevo tutoriais, artigos e sobre minha vivência como desenvolvedor"
+        color="#fff"
+        background="#005cef"
+      />
       <Container>
-        <h2 className="black">Blog</h2>
+        <Posts data={allMarkdownRemark} />
       </Container>
     </Layout>
   )

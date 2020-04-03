@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Layout, SEO, Container, Profile } from '../components'
+import { Layout, SEO, Container, Hero } from '../components'
 
 import * as S from '../styles/base'
 
@@ -9,10 +9,15 @@ export default function About() {
     <Layout>
       <SEO pageTitle="Sobre" pageDescription="Sobre" />
 
-      <Profile />
+      <Hero
+        title="Sobre mim"
+        description="Um pouco da minha história, como comecei onde estudei e o que sei fazer"
+        color="#fff"
+        background="#843B62"
+      />
 
       <Container>
-        <S.PostTitle>Sobre mim</S.PostTitle>
+        <S.PostTitle style={{ marginTop: '40px' }}>Começo</S.PostTitle>
 
         <S.PostContent>
           <p>

@@ -1,4 +1,5 @@
 import React from 'react'
+
 import { useStaticQuery, graphql } from 'gatsby'
 
 import { Layout, SEO, Posts, Container, Hero, Portfolio } from '../components'
@@ -32,13 +33,13 @@ export default function Index() {
   )
 
   return (
-    <Layout>
-      <Hero />
+    <Layout color="#222">
+      <Hero title="Vicentini" description="Front-end developer" />
 
       <Container>
         <SEO pageTitle="Home" pageDescription="Home" />
 
-        <Posts data={allMarkdownRemark} />
+        <Posts data={allMarkdownRemark} home />
 
         <Portfolio />
       </Container>

@@ -8,7 +8,7 @@ export default () => {
   return (
     <S.FooterWrapper>
       <Container>
-        <S.Footer>© {new Date().getFullYear()} Vinicius Vicentini</S.Footer>
+        <S.Footer>© {new Date().getFullYear()} Vicentini</S.Footer>
       </Container>
     </S.FooterWrapper>
   )

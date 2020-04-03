@@ -4,35 +4,45 @@ import { Container, ThemeSwitcher } from '../'
 
 import * as S from './styled'
 
-export default () => {
+export default ({ color }) => {
   return (
     <S.HeaderWrapper>
       <Container>
         <S.HeaderContainer>
-          <S.HeaderBrand to="/">Vicentini</S.HeaderBrand>
+          <S.HeaderBrand to="/" color={color}>
+            Vicentini
+          </S.HeaderBrand>
 
           <S.HeaderLinks>
             <S.HeaderList>
               <S.HeaderItem>
-                <S.HeaderLink to="/blog" activeClassName="active">
+                <S.HeaderLink to="/blog" color={color} activeClassName="active">
                   Blog
                 </S.HeaderLink>
               </S.HeaderItem>
 
               <S.HeaderItem>
-                <S.HeaderLink to="/portfolio" activeClassName="active">
+                <S.HeaderLink
+                  to="/portfolio"
+                  color={color}
+                  activeClassName="active"
+                >
                   Portfolio
                 </S.HeaderLink>
               </S.HeaderItem>
 
               <S.HeaderItem>
-                <S.HeaderLink to="/about" activeClassName="active">
+                <S.HeaderLink
+                  to="/about"
+                  color={color}
+                  activeClassName="active"
+                >
                   Sobre
                 </S.HeaderLink>
               </S.HeaderItem>
 
               <S.HeaderItem>
-                <ThemeSwitcher />
+                <ThemeSwitcher color={color} />
               </S.HeaderItem>
             </S.HeaderList>
           </S.HeaderLinks>

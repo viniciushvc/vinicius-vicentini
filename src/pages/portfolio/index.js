@@ -9,7 +9,12 @@ export default function About() {
     <Layout>
       <SEO pageTitle="Portfolio" pageDescription="Portfolio" />
 
-      <Hero color="#FF1D15" />
+      <Hero
+        title="Portfólio"
+        description="Alguns de meus trabalhos e projetos"
+        color="#fff"
+        background="#4AAD52"
+      />
 
       <S.PortfolioWrapper>
         <Container>

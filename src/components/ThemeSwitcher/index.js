@@ -4,7 +4,7 @@ import { FiSun, FiMoon } from 'react-icons/fi'
 
 import * as S from './styled'
 
-export default function() {
+export default function({ color }) {
   const [theme, setTheme] = useState()
 
   const isDark = theme === 'dark'
@@ -21,7 +21,7 @@ export default function() {
 
   return (
     <S.ThemeWrapper>
-      <S.ThemeButton color={isDark ? '#fff' : '#333'} onClick={changeTheme}>
+      <S.ThemeButton color={color} onClick={changeTheme}>
         {isDark ? <FiSun /> : <FiMoon />}
       </S.ThemeButton>
     </S.ThemeWrapper>

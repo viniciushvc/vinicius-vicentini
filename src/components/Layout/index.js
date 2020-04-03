@@ -12,7 +12,7 @@ import * as S from './styled'
 import favicon from '../../../static/favicon.png'
 import config from '../../../data/config'
 
-export default ({ children }) => {
+export default ({ color, children }) => {
   const data = useStaticQuery(graphql`
     {
       site {
@@ -32,7 +32,7 @@ export default ({ children }) => {
 
       <GlobalStyles />
 
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <Header siteTitle={data.site.siteMetadata.title} color={color} />
 
       <S.Main>{children}</S.Main>
 

@@ -16,7 +16,7 @@ export default () => {
           </S.ImageWrapper>
 
           <S.Title>
-            Vinicius Vicentini
+            Vicentini
             <small>Desenvolvedor Front End</small>
           </S.Title>
 

@@ -7,11 +7,11 @@ export const ButtonWrapper = styled.div`
 `
 
 export const Button = styled(Link)`
-  padding: 10px 30px;
+  padding: 10px 40px;
   background-color: ${props => props.color || 'var(--inverseBackground)'};
   border: 1px solid ${props => props.color || 'var(--inverseBackground)'};
   color: ${props => props.color || 'var(--inverseColor)'};
-  font-size: ${props => props.size || '24px'};
+  font-size: ${props => props.size || '20px'};
   text-align: center;
   border-radius: 4px;
   transition: ease 0.3s;

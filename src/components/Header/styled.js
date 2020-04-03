@@ -5,7 +5,7 @@ import { Link } from 'gatsby'
 import { css } from 'styled-components'
 
 const link = css`
-  color: var(--primaryColor);
+  color: ${props => props.color || '#fff'};
 
   &:hover {
     color: $primary;
@@ -13,6 +13,9 @@ const link = css`
 `
 
 export const HeaderWrapper = styled.header`
+  position: absolute;
+  top: 0;
+  width: 100%;
   padding: 20px 0;
   z-index: 1;
 `
