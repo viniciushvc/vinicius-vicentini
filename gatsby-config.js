@@ -7,6 +7,13 @@ module.exports = {
     siteUrl: config.siteUrl,
   },
   plugins: [
+    {
+      resolve: 'gatsby-plugin-google-fonts',
+      options: {
+        fonts: [`Baloo 2\:400,500,700,800`],
+        display: 'swap',
+      },
+    },
     'gatsby-plugin-catch-links',
     'gatsby-transformer-remark',
     'gatsby-plugin-react-helmet',

@@ -6,6 +6,8 @@ import { css } from 'styled-components'
 
 const link = css`
   color: ${props => props.color || '#fff'};
+  transition: 0.2s;
+  outline: 0;
 
   &:hover {
     color: $primary;
@@ -23,12 +25,14 @@ export const HeaderWrapper = styled.header`
 export const HeaderContainer = styled.div`
   display: flex;
   justify-content: space-between;
+  align-items: center;
 `
 
 export const HeaderBrand = styled(Link)`
   ${link}
 
-  font-weight: 900;
+  font-size: 20px;
+  font-weight: 800;
 `
 
 export const HeaderLinks = styled.div``
@@ -46,7 +50,7 @@ export const HeaderItem = styled.li`
 export const HeaderLink = styled(Link)`
   ${link}
 
-  &.active {
-    text-shadow: 1px 0 0 currentColor;
+  &:hover, &.active {
+    border-bottom: 2px solid currentColor;
   }
 `

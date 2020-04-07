@@ -2,7 +2,7 @@ import React from 'react'
 
 import { useStaticQuery, graphql } from 'gatsby'
 
-import { Layout, SEO, Posts, Container, Hero, Portfolio } from '../components'
+import { Layout, SEO, Posts, Container, Hero } from '../components'
 
 export default function Index() {
   const { allMarkdownRemark } = useStaticQuery(
@@ -34,14 +34,12 @@ export default function Index() {
 
   return (
     <Layout color="#222">
-      <Hero title="Vicentini" description="Front-end developer" />
+      <Hero title="Bem vindo" />
 
       <Container>
         <SEO pageTitle="Home" pageDescription="Home" />
 
         <Posts data={allMarkdownRemark} home />
-
-        <Portfolio />
       </Container>
     </Layout>
   )

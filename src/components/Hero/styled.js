@@ -9,10 +9,5 @@ export const HeroWrapper = styled.section`
 export const HeroTitle = styled.h1`
   font-size: 70px;
   color: ${props => props.color || '#222'};
-`
-
-export const HeroDescription = styled.h2`
-  margin-top: 20px;
-  font-size: 20px;
-  color: ${props => props.color || '#222'};
+  font-weight: 700;
 `

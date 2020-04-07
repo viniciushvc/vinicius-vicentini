@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 import { Link } from 'gatsby'
 
-export const PostsWrapper = styled.article``
+export const PostsWrapper = styled.div``
 
 export const PostsList = styled.article`
   display: grid;

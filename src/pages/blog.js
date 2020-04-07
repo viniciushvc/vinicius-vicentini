@@ -36,12 +36,7 @@ export default function Index() {
     <Layout>
       <SEO pageTitle="Blog" pageDescription="Blog" />
 
-      <Hero
-        title="Blog"
-        description="Um pouco do meu conhecimento, aqui eu escrevo tutoriais, artigos e sobre minha vivência como desenvolvedor"
-        color="#fff"
-        background="#005cef"
-      />
+      <Hero title="Blog" color="#fff" background="#005cef" />
       <Container>
         <Posts data={allMarkdownRemark} />
       </Container>

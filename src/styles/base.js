@@ -27,11 +27,10 @@ export const PostWrapper = styled.div`
 
 export const PostTitle = styled.h1`
   font-size: 50px;
-  font-weight: 900;
+  font-weight: 800;
 
   @media (max-width: 720px) {
     font-size: 30px;
-    font-weight: 900;
   }
 `
 
@@ -68,12 +67,18 @@ export const PostContent = styled.div`
   h5 {
     margin: 2.4rem auto 1rem;
   }
+
   ul,
   ol {
     list-style: disc;
     padding-left: 1.5rem;
     margin: 0 auto 1.6rem;
   }
+
+  ul ul {
+    list-style: circle;
+  }
+
   li {
     padding: 0.625rem 0;
     & > ul {
