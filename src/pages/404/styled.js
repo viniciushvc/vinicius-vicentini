@@ -82,7 +82,7 @@ export const Content = styled.div`
   flex-direction: column;
   display: flex;
   width: 100%;
-  height: calc(100vh - 44px);
+  height: calc(100vh - 84px);
   z-index: 1;
 
   h1 {
