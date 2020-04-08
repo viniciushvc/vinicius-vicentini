@@ -4,7 +4,7 @@ import { useStaticQuery, graphql } from 'gatsby'
 
 import { Layout, SEO, Container, Hero, Posts } from '../components'
 
-export default function Index() {
+export default function() {
   const { allMarkdownRemark } = useStaticQuery(
     graphql`
       query {

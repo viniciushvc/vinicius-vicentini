@@ -4,7 +4,7 @@ import { Layout, SEO, Container, Hero } from '../components'
 
 import * as S from '../styles/base'
 
-export default function About() {
+export default function() {
   return (
     <Layout>
       <SEO pageTitle="Sobre" pageDescription="Sobre" />
