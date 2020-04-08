@@ -29,8 +29,7 @@ export default () => {
               </S.SocialLink>
             ))}
           </S.Social>
-
-          <p>© {new Date().getFullYear()} Vicentini</p>
+          © {new Date().getFullYear()} Vicentini
         </S.Footer>
       </Container>
     </S.FooterWrapper>

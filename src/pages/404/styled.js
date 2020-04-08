@@ -5,7 +5,6 @@ import { Link } from 'gatsby'
 import { animations } from './animations'
 
 export const Wrapper = styled.section`
-  height: calc(100vh);
   background-image: linear-gradient(
     to right bottom,
     #6e366f,
@@ -34,7 +33,6 @@ export const Space = styled.div`
   background-repeat: repeat;
   background-position: center;
   width: 100%;
-  height: 100vh;
 `
 
 export const Earth = styled.img`
@@ -64,10 +62,6 @@ export const AstronautBox = styled.div`
   right: 20%;
   will-change: transform;
   animation: move-astronaut 50s infinite linear both alternate;
-
-  @media (max-width: 600px) {
-    top: 80%;
-  }
 `
 
 export const Astronaut = styled.img`
@@ -78,7 +72,7 @@ export const Astronaut = styled.img`
   width: 140px;
 
   @media (max-width: 600px) {
-    width: 100px;
+    width: 120px;
   }
 `
 
@@ -88,7 +82,7 @@ export const Content = styled.div`
   flex-direction: column;
   display: flex;
   width: 100%;
-  height: 100vh;
+  height: calc(100vh - 44px);
   z-index: 1;
 
   h1 {
@@ -110,15 +104,15 @@ export const Content = styled.div`
 
 export const Button = styled(Link)`
   padding: 10px 15px;
-  border: 1px solid #ffcb39;
+  background-color: #ffcb39;
+  color: #222;
   border-radius: 100px;
   font-weight: 500;
-  color: #fff;
   text-align: center;
   transition: 0.3s;
+  outline: 0;
 
   &:hover {
-    background-color: #ffcb39;
-    color: #222;
+    box-shadow: 0px 0px 18px 0px rgba(255, 203, 57, 1);
   }
 `

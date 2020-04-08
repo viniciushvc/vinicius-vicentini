@@ -1,8 +1,6 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 import { Link } from 'gatsby'
-
-import { css } from 'styled-components'
 
 const link = css`
   color: ${props => props.color || '#fff'};

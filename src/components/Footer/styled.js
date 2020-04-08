@@ -1,11 +1,7 @@
 import styled from 'styled-components'
 
 export const FooterWrapper = styled.footer`
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  z-index: 1;
-  margin: 30px 0;
+  margin: 10px 0;
 `
 
 export const Footer = styled.div`
