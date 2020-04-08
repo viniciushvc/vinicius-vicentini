@@ -1,12 +1,6 @@
 import { css } from 'styled-components'
 
 export const animations = css`
-  @keyframes rocket {
-    100% {
-      transform: translate(1200px, -600px);
-    }
-  }
-
   @keyframes earth {
     100% {
       -webkit-transform: rotate(-360deg);

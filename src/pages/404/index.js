@@ -1,16 +1,12 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 
 import { Layout, SEO } from '../../components'
+
+import { Space, Astronaut, Moon, Earth } from '../../assets/404'
 
 import * as S from './styled'
 
 export default function() {
-  useEffect(() => {
-    document.querySelector('html').style.overflow = 'hidden'
-
-    return () => (document.querySelector('html').style.overflow = 'initial')
-  }, [])
-
   return (
     <Layout>
       <SEO
@@ -19,7 +15,7 @@ export default function() {
       />
 
       <S.Wrapper>
-        <S.Space>
+        <S.Space background={Space}>
           <S.Content>
             <h1>404</h1>
 
@@ -28,14 +24,12 @@ export default function() {
             <S.Button to="/">Voltar ao início</S.Button>
           </S.Content>
 
-          <S.Rocket src="http://salehriaz.com/404Page/img/rocket.svg" />
+          <S.Earth src={Earth} />
 
-          <S.Earth src="http://salehriaz.com/404Page/img/earth.svg" />
-
-          <S.Moon src="http://salehriaz.com/404Page/img/moon.svg" />
+          <S.Moon src={Moon} />
 
           <S.AstronautBox>
-            <S.Astronaut src="http://salehriaz.com/404Page/img/astronaut.svg" />
+            <S.Astronaut src={Astronaut} />
           </S.AstronautBox>
         </S.Space>
       </S.Wrapper>

@@ -30,19 +30,11 @@ export const Wrapper = styled.section`
 `
 
 export const Space = styled.div`
-  background: url(http://salehriaz.com/404Page/img/overlay_stars.svg);
+  background: url(${props => props.background});
   background-repeat: repeat;
   background-position: center;
   width: 100%;
   height: 100vh;
-`
-
-export const Rocket = styled.img`
-  position: absolute;
-  transform: translateX(-50px);
-  top: 75%;
-  animation: rocket 3s linear infinite both running;
-  width: 40px;
 `
 
 export const Earth = styled.img`
@@ -60,11 +52,15 @@ export const Moon = styled.img`
   transform: rotate(0deg);
   transition: transform ease-in 0.5s;
   width: 80px;
+
+  @media (max-width: 600px) {
+    left: 30%;
+  }
 `
 
 export const AstronautBox = styled.div`
   position: absolute;
-  top: 60%;
+  top: 70%;
   right: 20%;
   will-change: transform;
   animation: move-astronaut 50s infinite linear both alternate;
@@ -76,11 +72,14 @@ export const AstronautBox = styled.div`
 
 export const Astronaut = styled.img`
   position: absolute;
-  top: 60%;
   right: 20%;
   will-change: transform;
   animation: rotate-astronaut 200s infinite linear both alternate;
   width: 140px;
+
+  @media (max-width: 600px) {
+    width: 100px;
+  }
 `
 
 export const Content = styled.div`
@@ -96,6 +95,10 @@ export const Content = styled.div`
     font-size: 150px;
     font-weight: 800;
     color: #fff;
+
+    @media (max-width: 600px) {
+      font-size: 100px;
+    }
   }
 
   p {
